@@ -6,7 +6,10 @@
       <title>ML API</title>
       <style>
          
-
+body{
+   background-image:url('template/media/car.jpg');
+   background-size:100%;
+         }
 input[type=text], select {
   width: 20%;
   padding: 12px 20px;
@@ -41,7 +44,6 @@ input[type=submit]:hover {
    <body>
       <div class="login" align="center">
          <h1>Predict Car Mileage</h1>
-         <img src='media/car.jpg'>
          <!-- Main Input For Receiving Query to our ML -->
          <form action="{{ url_for('predict')}}"method="post">
             <input type="text" name="Displacement of car engine" placeholder="Displacement of car engine" required="required" />
